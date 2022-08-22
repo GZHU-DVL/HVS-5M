@@ -36,7 +36,7 @@ Please note that when extracting spatial features, you can choose the size of fr
 
 First you need to download the SlowFast model into "./MotionExtractor/checkpoints/Kinetics/" 
 
-[SlowFast]()
+[SlowFast](https://github.com/facebookresearch/SlowFast/blob/main/MODEL_ZOO.md)
 
 Similarly, for the other five datasets and LSVQ, we also give two versions to extract temporal features, namely [CNNfeatures_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal.py) and [CNNfeatures_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal_LSVQ.py), respectively.
 
