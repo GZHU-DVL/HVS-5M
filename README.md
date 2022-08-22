@@ -24,11 +24,7 @@ We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de
 First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
 
 ```
-python CNNfeature_Spatial.py --database=KoNViD-1k --frame_batch_size=16 \
-python CNNfeature_Spatial.py --database=CVD2014 --frame_batch_size=16 \
-python CNNfeature_Spatial.py --database=LIVE-VQC --frame_batch_size=16 \
-python CNNfeature_Spatial.py --database=LIVE-Qualcomm --frame_batch_size=16 \
-python CNNfeature_Spatial.py --database=YouTube-UGC --frame_batch_size=16 \
+python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
 python CNNfeature_Spatial_LSVQ.py --database=LSVQ --frame_batch_size=16
 ```
 
@@ -43,3 +39,8 @@ First you need to download the SlowFast model into "./MotionExtractor/checkpoint
 [SlowFast]()
 
 Similarly, for the other five datasets and LSVQ, we also give two versions to extract temporal features, namely [CNNfeatures_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal.py) and [CNNfeatures_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal_LSVQ.py).
+
+```
+python CNNfeature_Temporal.py --database=database --frame_batch_size=64 \
+python CNNfeature_Temporal_LSVQ.py --database=LSVQ --frame_batch_size=64
+```
