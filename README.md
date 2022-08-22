@@ -16,4 +16,4 @@ HVS Revisited: A Comprehensive Video Quality Assessment  Framework
 ### Dataset Preparation
 **VQA Datasets.**
 
-KoNViD-1k   ([[http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://database.mmsp-kn.de/konvid-1k-database.html)]
+We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de/konvid-1k-database.html), [CVD2014](https://www.mv.helsinki.fi/home/msjnuuti/CVD2014/), [LIVE-VQC](http://live.ece.utexas.edu/research/LIVEVQC/index.html), [LIVE-Qualcomm](http://live.ece.utexas.edu/research/incaptureDatabase/index.html), [YouTube-UGC](https://media.withyoutube.com/), and [LSVQ](https://github.com/baidut/PatchVQ), download the datasets from the official website.
