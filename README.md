@@ -37,6 +37,6 @@ After running the [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blo
 
 ### Extract Temporal 
 **The motion features of the video are obtained by SlowFast.**
-First you need to download the SlowFast model into "./MotionExtractor/checkpoints/Kinetics/" 
 
+First you need to download the SlowFast model into "./MotionExtractor/checkpoints/Kinetics/" 
 [SlowFast]()
