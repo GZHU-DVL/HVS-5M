@@ -28,7 +28,7 @@ python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
 python CNNfeature_Spatial_LSVQ.py --database=LSVQ --frame_batch_size=16
 ```
 
-After running the [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py) or [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
+Please note that when extracting spatial features, you can choose the size of frame_batch_size according to your GPU. After running the [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py) or [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
 
 
 ### Extract Temporal 
@@ -44,3 +44,5 @@ Similarly, for the other five datasets and LSVQ, we also give two versions to ex
 python CNNfeature_Temporal.py --database=database --frame_batch_size=64 \
 python CNNfeature_Temporal_LSVQ.py --database=LSVQ --frame_batch_size=64
 ```
+Please note that frame_batch_size can only be 64 when extracting temporal features. After running the [CNNfeature_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Temporal.py) or [CNNfeature_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Temporal_LSVQ.py), you can get the temporal features of each video in /HVS-5M_dataset/TemporalFeature/.
+
