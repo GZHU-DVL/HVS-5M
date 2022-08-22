@@ -21,14 +21,14 @@ We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de
 ## Spatial Features
 **The Content and edge features of the video are obtained by ConvNeXt.**
 
-First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
+First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
 
 ```
 python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
 python CNNfeature_Spatial_LSVQ.py --database=LSVQ --frame_batch_size=16
 ```
 
-Please note that when extracting spatial features, you can choose the size of frame_batch_size according to your GPU. After running the [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py) or [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
+Please note that when extracting spatial features, you can choose the size of frame_batch_size according to your GPU. After running the [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py) or [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
 
 
 ## Temporal Features
@@ -44,7 +44,7 @@ Similarly, for the other five datasets and LSVQ, we also give two versions to ex
 python CNNfeature_Temporal.py --database=database --frame_batch_size=64 \
 python CNNfeature_Temporal_LSVQ.py --database=LSVQ --frame_batch_size=64
 ```
-Please note that frame_batch_size can only be 64 when extracting temporal features. After running the [CNNfeature_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Temporal.py) or [CNNfeature_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Temporal_LSVQ.py), you can get the temporal features of each video in /HVS-5M_dataset/TemporalFeature/.
+Please note that frame_batch_size can only be 64 when extracting temporal features. After running the [CNNfeatures_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal.py) or [CNNfeatures_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal_LSVQ.py), you can get the temporal features of each video in /HVS-5M_dataset/TemporalFeature/.
 
 ## Fusion Features
 **The spatial and temporal features are fused to obtain fusion features.**
@@ -60,3 +60,6 @@ After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob
 python main.py  --trained_datasets K --tested_datasets K \
 ```
 You can select multiple datasets for testing and evaluating. K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
+
+## Test Demo
+
