@@ -19,7 +19,7 @@ HVS Revisited: A Comprehensive Video Quality Assessment  Framework
 We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de/konvid-1k-database.html), [CVD2014](https://www.mv.helsinki.fi/home/msjnuuti/CVD2014/), [LIVE-VQC](http://live.ece.utexas.edu/research/LIVEVQC/index.html), [LIVE-Qualcomm](http://live.ece.utexas.edu/research/incaptureDatabase/index.html), [YouTube-UGC](https://media.withyoutube.com/), and [LSVQ](https://github.com/baidut/PatchVQ), download the datasets from the official website. 
 
 ### Extract Spatial Features
-**Content and edge features through attention mechanism.**
+**The Content and edge features through attention mechanism.**
 
 First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
 
@@ -33,3 +33,10 @@ python CNNfeature_Spatial_LSVQ.py --database=LSVQ --frame_batch_size=16
 ```
 
 After running the [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py) or [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
+
+
+### Extract Temporal 
+**The motion features of the video are obtained by SlowFast.**
+First you need to download the SlowFast model into "./MotionExtractor/checkpoints/Kinetics/" 
+
+[SlowFast]()
