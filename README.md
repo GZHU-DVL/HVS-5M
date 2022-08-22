@@ -15,6 +15,5 @@ HVS Revisited: A Comprehensive Video Quality Assessment  Framework
 
 ### Dataset Preparation
 **VQA Datasets.**
-KoNViD-1k  
-([http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://database.mmsp-kn.de/konvid-1k-database.html))
 
+KoNViD-1k   ([[http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://database.mmsp-kn.de/konvid-1k-database.html)]
