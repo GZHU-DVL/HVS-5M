@@ -71,8 +71,7 @@ python test_demo.py --model_path models/HVS-5M_K --video_path=data/test.mp4
 ## Acknowledgement
 This cobebase is heavily inspired by [BVQA-2022](https://github.com/zwx8981/TCSVT-2022-BVQA/) (Li et al., TCSVT2022).
 
-Visual saliency detection, networks for the spatial and temporal feature extraction mainly follows the implementations of [SAMNet](https://mmcheng.net/SAMNet/)(Liu et al., TIP2021), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt)(Liu et al., CVPR2022), and [SlowFast](https://github.com/
-facebookresearch/SlowFast)(Feichtenhofer et al., ICCV2019)
+Visual saliency detection, networks for the spatial and temporal feature extraction mainly follows the implementations of [SAMNet] (https://mmcheng.net/SAMNet/)(Liu et al., TIP2021), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) (Liu et al., CVPR2022), and [SlowFast](https://github.com/facebookresearch/SlowFast) (Feichtenhofer et al., ICCV2019)
 
 Great appreciation for their excellent works.
 
