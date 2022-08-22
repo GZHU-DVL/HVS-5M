@@ -28,7 +28,7 @@ python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
 python CNNfeature_Spatial_LSVQ.py --database=LSVQ --frame_batch_size=16
 ```
 
-Please note that when extracting spatial features, you can choose the size of frame_batch_size according to your GPU. After running the [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py) or [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py), you can get the spatial features of each video in /HVS-5M_dataset/SpatialFeature/.
+Please note that when extracting spatial features, you can choose the size of frame_batch_size according to your GPU. After running the [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py) or [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py), you can get the spatial features of each video in the directory "/HVS-5M_dataset/SpatialFeature/".
 
 
 ## Temporal Features
@@ -44,7 +44,7 @@ Similarly, for the other five datasets and LSVQ, we also give two versions to ex
 python CNNfeature_Temporal.py --database=database --frame_batch_size=64 \
 python CNNfeature_Temporal_LSVQ.py --database=LSVQ --frame_batch_size=64
 ```
-Please note that frame_batch_size can only be 64 when extracting temporal features. After running the [CNNfeatures_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal.py) or [CNNfeatures_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal_LSVQ.py), you can get the temporal features of each video in /HVS-5M_dataset/TemporalFeature/.
+Please note that frame_batch_size can only be 64 when extracting temporal features. After running the [CNNfeatures_Temporal.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal.py) or [CNNfeatures_Temporal_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Temporal_LSVQ.py), you can get the temporal features of each video in the directory "/HVS-5M_dataset/TemporalFeature/".
 
 ## Fusion Features
 **The spatial and temporal features are fused to obtain fusion features.**
@@ -53,7 +53,7 @@ Please note that frame_batch_size can only be 64 when extracting temporal featur
 python CNNfeature_Fusion.py --database=database --frame_batch_size=64 \
 ```
 
-After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Fusion.py), you can get the fusion features of each video in /HVS-5M_dataset/.
+After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Fusion.py), you can get the fusion features of each video in the directory "/HVS-5M_dataset/".
 
 ## Training and Evaluating
 ```
