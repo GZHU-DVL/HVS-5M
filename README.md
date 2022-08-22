@@ -21,7 +21,7 @@ We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de
 ## Spatial Features
 **The Content and edge features of the video are obtained by ConvNeXt.**
 
-First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
+First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py). In it, we mark the video sequence numbers that do not exist in the current version of LSVQ.
 
 ```
 python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
@@ -59,7 +59,12 @@ After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob
 ```
 python main.py  --trained_datasets K --tested_datasets K \
 ```
-You can select multiple datasets for testing and evaluating. K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
+You can select multiple datasets for testing and evaluating. Specifically, K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
 
 ## Test Demo
+We select the model with KoNViD-1k as the training set on the individual datasets test.
+
+```
+python test_demo.py --model_path models/HVS-5M_K --video_path=data/test.mp4
+```
 
