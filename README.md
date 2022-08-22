@@ -62,7 +62,7 @@ python main.py  --trained_datasets K --tested_datasets K \
 You can select multiple datasets for testing and evaluating. Specifically, K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
 
 ## Test Demo
-The individual dataset evaluation with KoNViD-1k is selected as the test demo model.
+The individual dataset evaluation with KoNViD-1k is selected as the test demo model. The model weights provided in "models/HVS-5M_K".
 
 ```
 python test_demo.py --model_path models/HVS-5M_K --video_path=data/test.mp4
