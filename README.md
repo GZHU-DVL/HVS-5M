@@ -21,7 +21,7 @@ We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de
 ## Spatial Features
 **The content and edge features of the video are obtained by ConvNeXt.**
 
-First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py). In it, we mark the video sequence numbers that do not exist in the current version of LSVQ.
+First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeatures_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial.py). Due to the particularity of the LSVQ dataset, we give a spatial features version for extracting LSVQ in [CNNfeatures_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeatures_Spatial_LSVQ.py). In it, we mark the video sequence numbers that do not exist in the current version of LSVQ.
 
 ```
 python CNNfeature_Spatial.py --database=database --frame_batch_size=16 \
