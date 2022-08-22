@@ -52,3 +52,7 @@ Please note that frame_batch_size can only be 64 when extracting temporal featur
 ```
 python CNNfeature_Fusion.py --database=database --frame_batch_size=64 \
 ```
+
+After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Fusion.py), you can get the fusion features of each video in /HVS-5M_dataset/.
+
+
