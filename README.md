@@ -20,4 +20,5 @@ We test HVS-5M on six datasets, including [KoNViD-1k](http://database.mmsp-kn.de
 
 ### Extract Spatial Features
 **Content and edge features through attention mechanism.**
+
 First, you need to download the dataset and copy the local address into the videos_dir of [CNNfeature_Spatial.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial.py). After that, you can choose frame_batch_size by yourself, which defaults to 16 here. Due to the particularity of the LSVQ dataset, we give a spatial feature version for extracting LSVQ in [CNNfeature_Spatial_LSVQ.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Spatial_LSVQ.py). In it, we marked the video sequence numbers that do not exist in the current version of LSVQ.
