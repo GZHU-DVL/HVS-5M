@@ -49,4 +49,6 @@ Please note that frame_batch_size can only be 64 when extracting temporal featur
 ### Fusion Features
 **The spatial and temporal features are fused to obtain fusion features.**
 
-
+```
+python CNNfeature_Fusion.py --database=database --frame_batch_size=64 \
+```
