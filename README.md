@@ -13,3 +13,7 @@ HVS Revisited: A Comprehensive Video Quality Assessment  Framework
 * scipy==1.8.0
 * tensorboardX==2.4.1
 
+### Dataset Preparation
+**VQA Datasets.**
+KoNViD-1k  ([http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html](http://database.mmsp-kn.de/konvid-1k-database.html))
+
