@@ -55,4 +55,8 @@ python CNNfeature_Fusion.py --database=database --frame_batch_size=64 \
 
 After running the [CNNfeature_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blob/main/CNNfeature_Fusion.py), you can get the fusion features of each video in /HVS-5M_dataset/.
 
-
+## Training and Evaluating
+```
+python main.py  --trained_datasets K --tested_datasets K \
+```
+You can select multiple datasets for testing and evaluating. K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
