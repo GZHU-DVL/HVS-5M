@@ -75,4 +75,5 @@ Visual saliency detection, networks for the spatial and temporal feature extract
 
 Great appreciation for their excellent works.
 
-
+## License
+This source code is made available for research purpose only.
