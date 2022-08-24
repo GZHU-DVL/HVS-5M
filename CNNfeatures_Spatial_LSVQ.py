@@ -33,7 +33,7 @@ class VideoDataset(Dataset):
 
     def __getitem__(self, idx):
         canny = torch.Tensor()
-        video_list = self.video_list[idx]  #other datasets
+        video_list = self.video_list[idx] + '.mp4'  #other datasets
         print(video_list)
         assert self.format == 'YUV420' or self.format == 'RGB'
         if self.format == 'YUV420':
@@ -177,8 +177,8 @@ if __name__ == "__main__":
     if args.database == 'LSVQ':
         videos_dir = 'LSVQ/'
         features_dir = 'HVS-5M_LSVQ/SpatialFeature/'
-        datainfo1 = 'data/labels_test_1080p.csv'
-        datainfo2 = 'data/labels_train_test.csv'
+        datainfo1 = 'data/labels_train_test.csv'
+        datainfo2 = 'data/labels_test_1080p.csv'
 
 
     if not os.path.exists(features_dir):
