@@ -57,7 +57,7 @@ After running the [CNNfeatures_Fusion.py](https://github.com/GZHU-DVL/HVS-5M/blo
 
 ## Training and Evaluating
 ```
-python main.py  --trained_datasets K --tested_datasets K \
+python main.py  --trained_datasets=K --tested_datasets=K \
 ```
 You can select multiple datasets for testing and evaluating. Specifically, K, C, N, L, Y, and Q represent KoNViD-1k, CVD2014, LIVE-VQC, LIVE-Qualcomm, YouTube-UGC, and LSVQ, respectively.
 
