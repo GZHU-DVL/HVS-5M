@@ -65,7 +65,7 @@ You can select multiple datasets for testing and evaluating. Specifically, K, C,
 The individual dataset evaluation with KoNViD-1k is selected as the test demo model. The model weights provided in "models/HVS-5M_K".
 
 ```
-python test_demo.py --model_path models/HVS-5M_K --video_path=data/test.mp4
+python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 ```
 
 ## Acknowledgement
