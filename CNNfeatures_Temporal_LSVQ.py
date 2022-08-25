@@ -28,7 +28,7 @@ class VideoDataset(Dataset):
         return len(self.video_names)
 
     def __getitem__(self, idx):
-        video_name = self.video_names[idx]
+        video_name = self.video_names[idx] + '.mp4'
         assert self.format == 'YUV420' or self.format == 'RGB'
         if self.format == 'YUV420':
             video_data = skvideo.io.vread(os.path.join(self.videos_dir, video_name), self.height, self.width, inputdict={'-pix_fmt':'yuvj420p'})
@@ -146,8 +146,8 @@ if __name__ == "__main__":
     if args.database == 'LSVQ':
         videos_dir = 'LSVQ/'
         features_dir = 'HVS-5M_LSVQ/SpatialFeature/'
-        datainfo1 = 'data/labels_test_1080p.csv'
-        datainfo2 = 'data/labels_train_test.csv'
+        datainfo1 = 'data/labels_train_test.csv'
+        datainfo2 = 'data/labels_test_1080p.csv'
 
     if not os.path.exists(features_dir):
         os.makedirs(features_dir)
