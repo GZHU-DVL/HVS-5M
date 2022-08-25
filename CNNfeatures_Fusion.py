@@ -56,7 +56,7 @@ if __name__ == "__main__":
     torch.utils.backcompat.broadcast_warning.enabled = True
 
     if args.database == 'KoNViD-1k':
-        videos_dir = '/private/home/aoxiang/KoNViD-1k_video/'
+        videos_dir = 'KoNViD-1k/'
         features_dir = 'HVS-5M_KoNViD-1k/'
         datainfo = 'data/KoNViD-1kinfo.mat'
     if args.database == 'CVD2014':
