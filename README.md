@@ -72,10 +72,9 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 ```
 
 ## Additional Experiments reusult
-<center>
 <table>
   	<tr>
-		<td>Training set</td>
+		<td align="center">Training set</td>
 		<td colspan="8">$\text{LSVQ}_{\text{Train}}$</td>
 	<tr>
 	<tr>
@@ -108,7 +107,6 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 		<td>0.832</td>
 	<tr>
 </table>
-</center>
 
 ## Acknowledgement
 This cobebase is heavily inspired by [BVQA-2022](https://github.com/zwx8981/TCSVT-2022-BVQA/) (Li et al., TCSVT2022).
