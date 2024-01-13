@@ -75,10 +75,25 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 <table>
   	<tr>
 		<td>Training set</td>
-		<td colspan="8">$LSVQ_{Test}$</td>
+		<td colspan="8">$LSVQ_{Train}$</td>
 	<tr>
 	<tr>
-		<td colspan="2">隔壁老王</td>
+		<td>Testing set</td>
+		<td colspan="2">$LSVQ_{Test}$</td>
+		<td colspan="2">$LSVQ_{1080P}$</td>
+		<td colspan="2">KoNViD-1k</td>
+		<td colspan="2">LIVE-VQC</td>
+	<tr>
+	<tr>
+		<td>Testing set</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
 	<tr>
 </table>
 
