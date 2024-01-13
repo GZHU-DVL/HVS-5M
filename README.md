@@ -75,7 +75,7 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 <table>
   	<tr>
 		<td>Training set</td>
-		<td colspan="8">$LSVQ_{Train}$</td>
+		<td colspan="8">$\text{LSVQ}_{\text{Train}}$</td>
 	<tr>
 	<tr>
 		<td>Testing set</td>
