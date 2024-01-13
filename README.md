@@ -85,7 +85,7 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 		<td colspan="2">LIVE-VQC</td>
 	<tr>
 	<tr>
-		<td>Testing set</td>
+		<td>Metric</td>
 		<td>SRCC</td>
 		<td>PLCC</td>
 		<td>SRCC</td>
@@ -94,6 +94,17 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 		<td>PLCC</td>
 		<td>SRCC</td>
 		<td>PLCC</td>
+	<tr>
+	<tr>
+		<td>HVS-5M</td>
+		<td>0.879</td>
+		<td>0.872</td>
+		<td>0.798</td>
+		<td>0.815</td>
+		<td>0.857</td>
+		<td>0.855</td>
+		<td>0.810</td>
+		<td>0.832</td>
 	<tr>
 </table>
 
