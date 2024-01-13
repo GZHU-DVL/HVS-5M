@@ -72,6 +72,8 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 ```
 
 ## Additional Experiments reusult
+
+*Table I: Evaluations on the large-scale dataset LSVQ and cross-dataset results.*
 <table>
   	<tr>
 		<td align="center">Training set</td>
@@ -107,6 +109,40 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 		<td>0.832</td>
 	<tr>
 </table>
+
+*Table II: Evaluations on the Fine-tuning results. (Pre-trained on LSVQ)*
+<table>
+	<tr>
+		<td>Fine-tuning Dataset</td>	
+		<td colspan="2">LIVE-VQC (585)</td>
+  		<td colspan="2">KoNViD-1k (1200)</td>
+		<td colspan="2">YouTube-UGC (1380)</td>
+		<td colspan="2">Weighted Average</td>
+	<tr>
+	<tr>
+		<td>Metric</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+		<td>SRCC</td>
+		<td>PLCC</td>
+	<tr>
+	<tr>
+		<td>HVS-5M</td>
+		<td>0.878</td>
+		<td>0.879</td>
+		<td>0.882</td>
+		<td>0.882</td>
+		<td>0.880</td>
+		<td>0.878</td>
+		<td>0.880</td>
+		<td>0.880</td>
+	<tr>
+</table>
+
 
 ## Acknowledgement
 This cobebase is heavily inspired by [BVQA-2022](https://github.com/zwx8981/TCSVT-2022-BVQA/) (Li et al., TCSVT2022).
