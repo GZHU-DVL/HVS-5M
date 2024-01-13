@@ -73,7 +73,7 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 
 ## Additional Experiments reusult
 | Training Set |    $LSVQ_test$        |
-|--------------|------|------|------|------|-----------|------|----------|------|
+|--------------|--------------|
 | Testing Set  | $LSVQ_test$       | $LSVQ_1080P$       | KoNViD-1k       | LIVE-VQC       |
 | Metric       | SRCC | PLCC | SRCC | PLCC | SRCC      | PLCC | SRCC     | PLCC |
 |      HVS-5M        |   0.879   |  0.872    |   0.798    |  0.815    |     0.857      |  0.855    |   0.810       |  0.832    |
