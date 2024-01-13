@@ -1,5 +1,5 @@
 # HVS-5M
-HVS Revisited: A Comprehensive Video Quality Assessment  Framework
+Official Repository for "A Spatial–Temporal Video Quality Assessment Method via Comprehensive HVS Simulation" (Accepted by Transactions on Cybernetics)  [[TCYB version]](https://ieeexplore.ieee.org/document/10373025)
 # Usage
 ## Requirment
 * python==3.8.8
