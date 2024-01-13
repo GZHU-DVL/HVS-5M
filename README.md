@@ -79,8 +79,8 @@ python test_demo.py --model_path=models/HVS-5M_K --video_path=data/test.mp4
 	<tr>
 	<tr>
 		<td>Testing set</td>
-		<td colspan="2">$LSVQ_{Test}$</td>
-		<td colspan="2">$LSVQ_{1080P}$</td>
+		<td colspan="2">$\text{LSVQ}_{\text{Test}}$</td>
+		<td colspan="2">$\text{LSVQ}_{\text{1080P}}$</td>
 		<td colspan="2">KoNViD-1k</td>
 		<td colspan="2">LIVE-VQC</td>
 	<tr>
