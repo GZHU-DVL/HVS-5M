@@ -1,6 +1,7 @@
 # HVS-5M
-Official Repository for "A Spatial–Temporal Video Quality Assessment Method via Comprehensive HVS Simulation" (Accepted by Transactions on Cybernetics)  [[TCYB version]](https://ieeexplore.ieee.org/document/10373025)
+Official Repository for "A Spatial–Temporal Video Quality Assessment Method via Comprehensive HVS Simulation" (Accepted by Transactions on Cybernetics)  [[TCYB version]](https://ieeexplore.ieee.org/document/10373025)\\
 <img src="https://github.com/GZHU-DVL/HVS-5M/blob/main/Framework.jpg" /><br/>
+
 # Usage
 ## Requirment
 * python==3.8.8
